@@ -1,0 +1,357 @@
+⸻
+
+1. Backend from First Principles
+	•	High-level understanding of how backend works
+	•	HTTP protocol
+	•	Role
+	•	Communication establishment
+	•	HTTP raw message
+	•	Headers → role
+	•	HTTP methods → GET, POST, PUT, DELETE
+	•	HTTP status codes → common codes
+	•	API methods
+	•	Best way to design API
+	•	Best practices in live industry
+	•	Route guarding
+	•	Input validation
+	•	Authorization
+	•	Securing routes
+	•	Optimizing performance
+
+⸻
+
+2. HTTP & REST
+	•	Difference between HTTP and HTTPS
+	•	How routing happens
+	•	How request flows
+	•	Components involved in request processing
+	•	HTTP request vs HTTP response format
+	•	Browser → server
+	•	API vs browser request
+	•	HTTP versions
+	•	HTTP 1.1 vs 2.0 vs 3.0
+	•	Stateless nature
+	•	Content negotiation
+	•	Persistent connections
+	•	HTTP compression (gzip, brotli)
+	•	Security aspects → SSL, TLS, HTTPS
+
+⸻
+
+3. Routing
+	•	How routing maps URLs to server-side logic
+	•	Difference between low-level routing & framework routing
+	•	Importance of route parameters & query parameters
+	•	Static vs dynamic routes
+	•	Clean URL design
+	•	Route versioning
+	•	API versioning using HTTP
+	•	Different routing techniques
+	•	Best way to structure routes
+	•	Best practices in live industry
+
+⸻
+
+4. Serialization & Deserialization
+	•	Before sending data to the network, low-level serialization
+	•	Data in memory format after receiving data from client over internet
+	•	Serialization
+	•	Deserialization
+	•	Interoperability format → JSON
+	•	Formats used in S&D → JSON
+
+⸻
+
+5. Validation & Transformation
+
+Types of Validation
+	•	Syntax validation → email, password
+	•	Semantic validation → date not in future
+	•	Business rule validation
+	•	Client-side vs server-side validation
+	•	Importance of server-side validation
+
+Transformation
+	•	Transforming input data
+	•	Normalization
+	•	Sanitization
+	•	Preventing injection attacks
+	•	Ensuring consistency between frontend & backend
+
+⸻
+
+6. Authentication & Authorization
+	•	Why we need authentication
+	•	Types of authentication
+	•	Basic authentication
+	•	Token-based authentication
+	•	Sessions
+	•	JWT
+	•	Cookies
+	•	Tokens
+	•	Role-based authorization
+	•	How authorization works
+	•	Difference between authentication & authorization
+
+⸻
+
+7. Middlewares
+	•	What is middleware
+	•	Request middleware
+	•	Response middleware
+	•	Pre-request middleware
+	•	Post-response middleware
+	•	Flow of middleware
+	•	Common middleware use cases
+	•	Logging
+	•	Authentication
+	•	Authorization
+	•	Validation
+	•	Writing custom middleware
+	•	Error handling middleware
+
+⸻
+
+8. Request Context
+	•	Lifecycle of request
+	•	Handling state during request
+	•	Sharing data across layers
+	•	Passing data between middleware
+	•	Request-scoped data
+	•	How context helps debugging
+
+⸻
+
+9. Controllers
+	•	Role of controllers
+	•	Handling incoming requests
+	•	Calling services
+	•	Returning responses
+	•	Keeping controllers thin
+	•	Validating inputs
+	•	Error handling at controller level
+
+⸻
+
+10. CRUD Deep Dive
+	•	Different CRUD methods & common APIs associated with each method
+	•	POST → create submission
+	•	GET → retrieve data
+	•	PUT & PATCH → update data
+	•	DELETE → delete record
+	•	Idempotency
+	•	How to design proper CRUD APIs
+	•	Error handling in CRUD
+	•	Status codes mapping
+
+⸻
+
+11. RESTful Best Practices
+	•	Principles of REST APIs
+	•	HTTP semantics
+	•	Resource-based URLs
+	•	Proper naming conventions
+	•	Pagination
+	•	Filtering
+	•	Sorting
+	•	Versioning
+	•	Consistency in responses
+
+⸻
+
+12. Database
+	•	RDBMS vs NoSQL
+	•	ACID properties
+	•	Indexes
+	•	Joins
+	•	Relationships
+	•	Schema design
+	•	Normalization
+	•	Transactions
+	•	Query optimization
+
+⸻
+
+13. Business Logic Layer (BLL)
+	•	Role of BLL
+	•	Separation of concerns
+	•	Validation logic
+	•	Core business rules
+	•	Interaction with DAL
+	•	Keeping logic reusable
+	•	Avoiding fat controllers
+
+⸻
+
+14. Caching
+	•	Need of caching
+	•	Diff from database querying
+	•	Types of caching
+	•	Memory caching
+	•	Browser caching
+	•	Server-side caching
+	•	Cache invalidation
+	•	Cache eviction strategies
+	•	LRU
+	•	LFU
+	•	TTL
+
+⸻
+
+15. Performance Optimization
+	•	Measuring performance
+	•	Response time
+	•	Throughput
+	•	Identifying bottlenecks
+	•	Database optimization
+	•	Caching for performance
+	•	Asynchronous processing
+	•	Load testing
+
+⸻
+
+16. Error Handling
+	•	Syntax errors
+	•	Runtime errors
+	•	Logical errors
+	•	Global error handling
+	•	Custom error responses
+	•	Proper error messages
+	•	Logging errors
+	•	Avoid leaking sensitive info
+
+⸻
+
+17. Scheduling & Background Jobs
+	•	Use cases
+	•	Cron jobs
+	•	Running tasks in background
+	•	Task queues
+	•	Retrying failed jobs
+	•	Delayed jobs
+	•	Monitoring jobs
+
+⸻
+
+18. Logging & Monitoring
+	•	Types of logs
+	•	Logging levels
+	•	Centralized logging
+	•	Monitoring metrics
+	•	Alerts
+	•	Tracing
+	•	Observability basics
+
+⸻
+
+19. Config Management
+	•	Environment variables
+	•	Secrets management
+	•	Config files
+	•	Avoid hardcoding secrets
+	•	Different configs per environment
+
+⸻
+
+20. Security
+	•	Avoiding SQL injection
+	•	Avoiding XSS
+	•	Avoiding CSRF
+	•	Proper authentication
+	•	Authorization checks
+	•	Secure headers
+	•	Input sanitization
+
+⸻
+
+21. Observability
+	•	Logs
+	•	Metrics
+	•	Traces
+	•	Monitoring tools
+	•	Debugging production issues
+
+⸻
+
+22. Scalability
+	•	Vertical scaling
+	•	Horizontal scaling
+	•	Load balancers
+	•	Stateless services
+	•	Caching for scale
+	•	Database scaling
+
+⸻
+
+23. System Design Basics
+	•	Designing scalable systems
+	•	Handling high traffic
+	•	Trade-offs
+	•	Performance vs consistency
+	•	Fault tolerance
+
+⸻
+
+24. Deployment
+	•	Deployment strategies
+	•	Environments
+	•	CI/CD
+	•	Containers
+	•	Docker
+	•	Version control
+	•	Rolling deployments
+
+⸻
+
+25. Webhooks
+	•	What are webhooks
+	•	Sending events
+	•	Receiving events
+	•	Security in webhooks
+	•	Retry mechanisms
+
+⸻
+
+26. Realtime Backend Systems
+	•	WebSockets
+	•	Server-sent events
+	•	Real-time communication
+	•	Use cases
+
+⸻
+
+27. Testing & Code Quality
+	•	Unit testing
+	•	Integration testing
+	•	End-to-end testing
+	•	Load testing
+	•	Code reviews
+	•	Writing maintainable code
+
+⸻
+
+28. API Standards
+	•	OpenAPI
+	•	Swagger
+	•	Documentation
+	•	API contracts
+	•	Versioning
+
+⸻
+
+29. Object Storage & File Handling
+	•	File uploads
+	•	Streaming
+	•	Object storage (S3)
+	•	Handling large files
+	•	Security considerations
+
+⸻
+
+30. Final Best Practices
+	•	Clean code
+	•	Modular design
+	•	Proper documentation
+	•	Secure coding
+	•	Performance-aware development
+	•	Maintainability
